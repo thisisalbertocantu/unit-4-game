@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trigger Clicked</title>
+
+    <!-- Added link to the Font AwesomeLibrary -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Added link to the Bootstrap Library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Crystals collector</h1>
+        <hr class="my-4">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+            to your total score.</p>
+        <p> You win the game by matching your total score to the random number, you lose the game if your
+            total score goes above the random number. </p>
+        <p>The value of each crystal is hidden from you until you click on it</p>
+        <p>Each time when the game starts, the game will change the values of each crystal</p>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-3 col-lg-3">
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">
+                    <h4>Random Number: </h4>
+                </div>
+                <div class="card-body">
+                    <h2 class="goal-number">39</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 col-3">
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title" id="wins-counter">Wins:</h3>
+                    <h3 class="card-title" id="losses-counter">Losses:</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-3 col-lg-3">
+            <div class="d-flex justify-content-center bg-primary">
+                <h2>Diamond</h2>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 col-lg-3">
+            <div class="d-flex justify-content-center bg-info">
+                <h2>Turquoise</h2>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 col-lg-3">
+            <div class="d-flex justify-content-center bg-danger">
+                <h2>Ruby</h2>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 col-lg-3">
+            <div class="d-flex justify-content-center bg-warning">
+                <h2>Sapphire</h2>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-3 col-lg-3">
+            <div class="card bg-light mb-3" style="max-width: 18rem; margin-top: 20px;">
+                <div class="card-header"><h3>Your total score is:</h3></div>
+                <div class="card-body">
+                    <h2 class="card-title" id="final-score">39</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
