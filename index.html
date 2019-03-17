@@ -3,10 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Trigger Clicked</title>
-
-    <!-- Added link to the Font AwesomeLibrary -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Crystal Collector Game</title>
 
     <!-- Added link to the Bootstrap Library -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -38,15 +35,15 @@
                     <h4>Random Number: </h4>
                 </div>
                 <div class="card-body">
-                    <h2 class="goal-number">39</h5>
+                    <h2 class="random-number"></h5>
                 </div>
             </div>
         </div>
         <div class="col-12 col-md-3 col-3">
             <div class="card bg-light mb-3" style="max-width: 18rem;">
                 <div class="card-body">
-                    <h3 class="card-title" id="wins-counter">Wins:</h3>
-                    <h3 class="card-title" id="losses-counter">Losses:</h3>
+                    <h3 class="card-title" id="wins-counter"></h3>
+                    <h3 class="card-title" id="losses-counter"></h3>
                 </div>
             </div>
         </div>
@@ -55,22 +52,22 @@
     <div class="row">
         <div class="col-12 col-md-3 col-lg-3">
             <div class="d-flex justify-content-center bg-primary">
-                <h2>Diamond</h2>
+                <h2 id="diamond">Diamond</h2>
             </div>
         </div>
         <div class="col-12 col-md-3 col-lg-3">
             <div class="d-flex justify-content-center bg-info">
-                <h2>Turquoise</h2>
+                <h2 id="turquoise">Turquoise</h2>
             </div>
         </div>
         <div class="col-12 col-md-3 col-lg-3">
             <div class="d-flex justify-content-center bg-danger">
-                <h2>Ruby</h2>
+                <h2 id="ruby">Ruby</h2>
             </div>
         </div>
         <div class="col-12 col-md-3 col-lg-3">
             <div class="d-flex justify-content-center bg-warning">
-                <h2>Sapphire</h2>
+                <h2 id="sapphire">Sapphire</h2>
             </div>
         </div>
     </div>
@@ -81,7 +78,7 @@
             <div class="card bg-light mb-3" style="max-width: 18rem; margin-top: 20px;">
                 <div class="card-header"><h3>Your total score is:</h3></div>
                 <div class="card-body">
-                    <h2 class="card-title" id="final-score">39</h2>
+                    <h2 class="card-title" id="final-score"></h2>
                 </div>
             </div>
         </div>
@@ -90,6 +87,7 @@
 
     </div>
 
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
